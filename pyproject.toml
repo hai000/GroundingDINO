@@ -1,3 +1,20 @@
 [build-system]
-requires = ["setuptools >= 64", "wheel"]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "groundingdino"
+version = "0.1.0"
+description = "Grounding DINO: Open-Set Object Detection with Language Guidance"
+authors = [
+    { name="IDEA Research", email="contact@idea.edu" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "torch>=1.10",
+    "torchvision>=0.11",
+    "addict",
+    "yapf",
+    "supervision"
+]
